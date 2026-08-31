@@ -113,7 +113,18 @@ transition: transform 0.2s ease;
 
 button:active {
 transform: scale(0.94);
-      }  </style>
+    @keyframes نبض {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+button {
+  animation: نبض 2s infinite;
+    }  }  </style>
 </head>
 
 <body>
